@@ -1,0 +1,122 @@
+/* Define root-level variables for consistent styling */
+:root {
+  --background-color: #00a88483; /* Lightened background color */
+  --background-color: #00A884; /* Main background color */
+  --big-font: 3.3rem; /* Large font size */
+  --h2-font: 2.6rem; /* Heading 2 font size */
+  --p-font: 0.9rem; /* Paragraph font size */
+  --text-color: #302e29; /* Text color */
+}
+
+/* Style for the main section */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  /* height: 68vh; */
+}
+
+/* Style for the article container */
+.article {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the article's heading */
+.article h1 {
+  font-size: var(--big-font);
+  width: 500px;
+}
+
+/* Styles for the left and right sections within the article */
+.left, .right {
+  padding: 20px 10px;
+}
+
+/* Image transition on hover effect */
+.left img {
+  transition: 0.4s ease;
+}
+
+.left img:hover {
+  transform: scale(1.1);
+}
+
+/* Paragraph styles within the article */
+.article p {
+  margin-top: -20px;
+  line-height: 30px;
+  font-size: var(--p-font);
+  width: 500px;
+}
+
+/* Media query for responsive design below 768px */
+@media (max-width: 768px) {
+
+  /* Adjust styles for the main section in smaller screens */
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: auto;
+  }
+  
+  /* Adjust styles for the article container in smaller screens */
+  .article {
+    flex-direction: column;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Adjust heading styles within the article for smaller screens */
+  .article h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    /* font-size: 3rem; */
+    font-weight: 700;
+  }
+  
+  /* Adjust paragraph styles within the article for smaller screens */
+  .article p {
+    text-align: center;
+    font-size: var(--p-font);
+    /* width: 450px; */
+  }
+
+  /* Adjust padding for left and right sections in smaller screens */
+  .left, .right {
+    padding: 5px ;
+  }
+
+  /* Adjust layout for right and left sections in smaller screens */
+  .right, .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Styles specific to the button component */
+  .right .custom-button {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    /* left: -14px; */
+    padding: 10px 25px;
+    border-radius: 20px;
+  }
+
+  /* Image styles for smaller screens */
+  .left img {
+    height: 320px;
+    position: relative;
+    left: 15px;
+    top: 13px;
+  }
+}

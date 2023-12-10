@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@500;600;700;800;900&display=swap');
+
+:root {
+  --background-color: #F5F7F8;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+

@@ -1,0 +1,134 @@
+/*
+  Custom CSS for Testimonial Section
+*/
+
+:root {
+  --background-color: #F5F7F8;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+}
+
+/* Styling for testimonial background */
+.testimonial-bg {
+  width: 100%;
+  background-color: #E4FFE1;
+  height: 103vh;
+  margin-top: 0px;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 100px;
+  padding: 40px 0px;
+}
+
+/* Styling for testimonial heading */
+.testimonial-heading {
+  color: #333;
+  font-size: var(--h2-font);
+  margin-left: 110px;
+}
+
+/* Styling for testimonial container */
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Styling for individual testimonial */
+.testimonial {
+  display: block;
+  width: 230px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, lightgreen, rgba(235, 235, 105, 0.882));
+  box-shadow: inset 0px 10px 10px 2px rgba(255, 255, 0, 0.125);
+  transition: 0.4s ease;
+}
+
+/* Hover effect for testimonial */
+.testimonial:hover {
+  transform: translateX(3px);
+}
+
+/* Styling for testimonial image */
+.testimonial-image {
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 0px 0px;
+  clip-path: circle(40%);
+  height: 150px;
+}
+
+/* Styling for testimonial comment */
+.testimonial-comment {
+  color: #555;
+  font-size: var(--p-font);
+  line-height: 1.5;
+}
+
+/* Styling for testimonial info */
+.testimonial-info {
+  margin-top: 10px;
+}
+
+/* Styling for testimonial stars */
+.testimonial-stars {
+  color: yellowgreen;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .testimonial-bg {
+    height: auto;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -28px;
+  }
+
+  .testimonial-info h4 {
+    text-align: center;
+  }
+
+  .testimonial h3 {
+    text-align: center;
+    position: relative;
+    left: -11px;
+  }
+
+  .testimonial-comment {
+    text-align: center;
+  }
+
+  .testimonial-bg h2 {
+    text-align: center;
+    position: relative;
+    top: -33px;
+    left: -58px;
+  }
+}
+
+@media (max-width: 990px) {
+  .testimonial-bg {
+    height: 170vh;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: -28px;
+  }
+}

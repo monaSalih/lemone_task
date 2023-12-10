@@ -1,0 +1,111 @@
+/* Define global variables for styling */
+:root {
+  --background-color: #F5F7F8;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+}
+
+/* Style for the footer section */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  background-color: #7c7b7b; /* Adjusted background color for better contrast */
+  color: var(--text-color);
+  padding: 10px 0px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 30px;
+}
+
+.footer-logo {
+  margin: auto 0px;
+}
+
+.footer-logo img {
+  width: 160px;
+}
+
+/* Style for navigation elements in the footer */
+.doormat-navigation,
+.contact-navigation,
+.social-media-navigation {
+  color: #f4f2f2;
+  font-size: 0.85rem;
+}
+
+.footer .doormat-navigation {
+  font-size: var(--p-font);
+  margin-left: 0px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.footer .doormat-navigation p:hover {
+  color: #e1ec46; /* Highlight text color on hover */
+}
+
+.footer .contact-navigation {
+  font-size: var(--p-font);
+  margin-left: 0px;
+  line-height: 1.5;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.footer .social-media-navigation p {
+  font-size: var(--p-font);
+  margin-left: 0px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    gap: 0px;
+    padding: 20px 0px;
+    position: relative;
+    top: 723px;
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    width: 98%;
+  }
+
+  .footer-logo {
+    display: none; /* Hide logo on small screens */
+  }
+
+  .footer .contact-navigation {
+    text-align: left;
+    padding: 0px 10px;
+  }
+
+  .footer .contact-navigation h3 {
+    text-align: left;
+    padding: 0px 14px;
+  }
+
+  .footer .doormat-navigation p {
+    text-align: left;
+    position: relative;
+    left: 20px;
+  }
+
+  .footer .doormat-navigation h3 {
+    position: relative;
+    left: 28px;
+  }
+
+  .footer .contact-navigation p {
+    text-align: left;
+    padding: 0px 5px;
+  }
+
+  .footer .social-media-navigation p {
+    text-align: left;
+  }
+}

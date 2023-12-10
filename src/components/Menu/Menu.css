@@ -1,0 +1,111 @@
+/* Root variables for consistent styling */
+:root {
+  --background-color: #F5F7F8;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+}
+
+/* Styling for the menu background */
+.menu-bg {
+  width: 100%;
+  background-color: #E4FFE1;
+  height: 900px;
+  margin-top: -35px;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 100px;
+}
+
+/* Main container styling */
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Card container grid styling */
+.Card-Container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual card styling */
+.card {
+  display: block;
+  width: 230px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, lightgreen, rgba(235, 235, 105, 0.882));
+  box-shadow: inset 0px 10px 10px 2px rgba(255, 255, 0, 0.125);
+  transition: 0.4s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateX(3px);
+}
+
+/* Styling for card image */
+.card img {
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 0px 0px;
+  clip-path: circle(40%);
+}
+
+/* Styling for card text content */
+.card h3, p {
+  margin-left: 10px;
+}
+
+/* Styling for main container h2 heading */
+.main-container h2 {
+  font-size: var(--h2-font);
+  padding-top: 60px;
+}
+
+/* Styling for card paragraph */
+.card p {
+  font-size: var(--p-font);
+  line-height: 1.5;
+}
+
+/* Styling for card h3 span */
+.card h3 span {
+  float: right;
+  margin-right: 12px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .menu-bg {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-container h2 {
+    text-align: center;
+  }
+
+  .Card-Container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  /* Align card paragraph to the left on smaller screens */
+  .Card-Container .card p {
+    text-align: left;
+  }
+}

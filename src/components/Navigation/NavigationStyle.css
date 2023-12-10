@@ -1,0 +1,66 @@
+/* Define global CSS variables */
+:root {
+  --background-color: #F5F7F8;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+  --nav-border-hover-effect: #40D777;
+}
+
+/* Style for the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 12px auto; /* Set margin and width for centering and spacing */
+}
+
+/* Style for the unordered list within the navigation bar */
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 20px;
+}
+
+/* Style for the links within list items */
+li a {
+  position: relative;
+  text-decoration: none;
+  color: #302e29;
+  font-size: var(--p-font);
+  font-weight: 600;
+  transition: transform 0.3s ease; /* Add a smooth transition effect on transform */
+  cursor: pointer;
+}
+
+/* Underline effect for links on hover */
+li a::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0; /* Initially hidden */
+  height: 3px;
+  background-color: var(--nav-border-hover-effect);
+  transition: width 0.5s ease; /* Transition effect for the underline */
+}
+
+/* Expand the underline on link hover */
+li a:hover::before {
+  width: 100%;
+}
+
+/* Translate links to the right on hover */
+li a:hover {
+  transform: translateX(10px);
+}
+
+/* Media query for responsive design - hide the navigation list on smaller screens */
+@media (max-width: 768px) {
+  ul {
+    display: none;
+  }
+}

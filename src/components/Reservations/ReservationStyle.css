@@ -8,7 +8,7 @@
 
 .Reservation-Form {
   width: 100%;
-  background: linear-gradient(to bottom, lightgreen, rgba(235, 235, 105, 0.882));
+  background: linear-gradient(to bottom,#557C55, #D2DE32);
   height: 85vh;
   margin-top: -18px;
   border-bottom-left-radius: 100px;

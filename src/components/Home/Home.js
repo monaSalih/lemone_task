@@ -1,6 +1,6 @@
 // Importing necessary styles and components
 import "./HomeStyle.css";
-import HeroImage from "./smilingChef.png";
+import HeroImage from "./chef.png";
 import Button from "../Button/Button";
 
 // Home component for the homepage
@@ -16,7 +16,7 @@ export default function Home() {
       // Adding an id for easier navigation
       id="home"
       // Adding ARIA attribute to label the section for screen readers
-      aria-labelledby="homeHeading"
+      aria-labelledby=""
     >
       {/* Container for the main content */}
       <div className="article">
